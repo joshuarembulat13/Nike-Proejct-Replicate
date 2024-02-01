@@ -4,7 +4,7 @@ export const data = [
       price: "6195",
       discount: 19,
       category: "Women's Shoes",
-      image: "/products/nike/dunk-low-se-shoes-FLw0K3.webp",
+      image: "/products/nike/dunk-low-se-shoes-FLw0k3.webp",
       description:
          "These classic Dunks get a metamorphous refresh inspired by the merging of digital and physical worlds. Jewel-like hardware, holographic accents and a special JDI dubrae add the finishing touch so you can take centre stage in style.",
       size: [

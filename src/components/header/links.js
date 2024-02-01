@@ -5,7 +5,6 @@ const link = [
    "New & Featured",
    "Men",
    "Women",
-   " Kids",
    "Kids",
    "Sale",
    "Customise",
