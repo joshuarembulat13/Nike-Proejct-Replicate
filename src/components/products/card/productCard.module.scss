@@ -1,0 +1,62 @@
+.container {
+   width: auto;
+   cursor: pointer;
+   padding: 0 0 30px 0;
+   .avatar {
+      .image {
+         height: 365px;
+         @media screen and (min-width: 1559px) {
+            height: 500px;
+         }
+      }
+   }
+   @media screen and (max-width: 1200px) {
+      width: 500px;
+      .avatar {
+         overflow: hidden;
+         height: auto;
+         image {
+            height: 365px;
+         }
+      }
+   }
+   .details {
+      .title,
+      .category {
+         margin: 5px 0;
+      }
+      .title {
+         font-size: 20px;
+      }
+      .category,
+      .colour {
+         font-size: 18px;
+         color: #7e7e7e;
+         font-weight: 500;
+      }
+      .pricing {
+         display: flex;
+         gap: 10px;
+         flex-direction: column;
+         .mainPrice {
+            width: 100%;
+            display: flex;
+            padding: 10px 0;
+            gap: 10px;
+            .totalPrice {
+               font-weight: 600;
+               font-size: 18px;
+            }
+            .discount {
+               color: #7e7e7e;
+               font-size: 18px;
+            }
+         }
+         .off {
+            color: rgb(0, 125, 72);
+            font-weight: 600;
+            font-size: 18px;
+         }
+      }
+   }
+}

@@ -1,0 +1,28 @@
+.container {
+   width: 100%;
+   .productContainer {
+      .productG {
+         .promo {
+            width: 365px;
+            height: auto;
+            .promoImage {
+               height: 365px;
+               @media screen and (min-width: 1559px) {
+                  height: 500px;
+               }
+            }
+         }
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(3, 365px);
+         justify-content: center;
+         gap: 20px;
+         @media screen and (min-width: 1599px) {
+            grid-template-columns: repeat(3, 500px);
+         }
+         @media screen and (max-width: 1598px) {
+            grid-template-columns: repeat(auto-fit, 365px);
+         }
+      }
+   }
+}
