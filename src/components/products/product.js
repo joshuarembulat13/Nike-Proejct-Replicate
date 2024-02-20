@@ -24,6 +24,7 @@ export default function Products() {
                      discount,
                      image,
                      price,
+                     sub,
                   }) => (
                      <ProductCard
                         key={name}
@@ -34,6 +35,7 @@ export default function Products() {
                         discount={discount}
                         image={image}
                         price={price}
+                        subImage={sub}
                      />
                   )
                )}

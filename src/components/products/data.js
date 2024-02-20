@@ -5,6 +5,7 @@ export const data = [
       discount: 19,
       category: "Women's Shoes",
       image: "/products/nike/dunk-low-se-shoes-FLw0k3.webp",
+      sub: null,
       description:
          "These classic Dunks get a metamorphous refresh inspired by the merging of digital and physical worlds. Jewel-like hardware, holographic accents and a special JDI dubrae add the finishing touch so you can take centre stage in style.",
       size: [
@@ -29,6 +30,7 @@ export const data = [
       discount: 19,
       category: "Mens's Shoes",
       image: "/products/nike/air-max-97-shoes-EBZrb8.webp",
+      sub: null,
       description:
          "Featuring the original ripple design inspired by Japanese bullet trains, the Nike Air Max 97 lets you push your style full-speed ahead.Taking the revolutionary full-length Nike Air unit that shook up the running world and adding fresh colours and crisp details, it lets you ride in first-class comfort.",
       size: [
@@ -56,6 +58,7 @@ export const data = [
       discount: 19,
       category: "Long-Sleeve Skate T-Shirt",
       image: "/products/nike/sb-long-sleeve-skate-t-shirt-5RBbCL.webp",
+      sub: null,
       description:
          "Keep your look clean and classic in this long-sleeve Nike SB tee. The soft midweight cotton helps you stay comfortable, while the roomy fit lets you move freely on and off your board.",
       size: ["S", "M", "L", "XL", "2XL"],
@@ -66,6 +69,7 @@ export const data = [
       discount: 19,
       category: "Men's Woven Lined Flow Shorts",
       image: "/products/nike/sportswear-sport-essentials-woven-lined-flow-shorts-rG2mXP.webp",
+      sub: null,
       description:
          "Whether you're running to the nearest food truck or diving into your favourite swimming hole, the Nike Sportswear Sport Essentials Lined Flow Shorts are a good idea. Lined for comfort, the smooth woven fabric is lightweight and lends itself to adventures of all kinds.",
       size: ["S", "M", "L", "XL", "2XL"],
@@ -76,6 +80,12 @@ export const data = [
       discount: 19,
       category: "Men's Shoes",
       image: "/products/nike/air-force-1-07-shoes-PhJwrD.webp",
+      sub: [
+         {
+            id: "1",
+            img: "/products/nike/sub/air-force-1-07-shoes-WrLlWX.webp",
+         },
+      ],
       description:
          "An aged neutral palette updates this icon for timeless style that's easy to wear. Soft suede pairs with an exposed foam tongue for a retro look. Of course, some things never change: Nike Air units still cushion your every step.",
       size: [
@@ -99,6 +109,7 @@ export const data = [
       discount: 19,
       category: "Women's Long-Sleeve T-Shirt",
       image: "/products/nike/sportswear-long-sleeve-t-shirt-3R2Q2Q.webp",
+      sub: null,
       description:
          "Growth is a journey, not a destination. So while reaching towards the sun, stay comfy in this soft tee. The dropped shoulders and boxy fit give you a relaxed look without feeling too big.",
       size: ["S", "M", "L", "XL"],
@@ -109,6 +120,7 @@ export const data = [
       discount: 19,
       category: "Women's Shoes",
       image: "/products/nike/air-jordan-1-low-se-shoes-4Kxpk4.webp",
+      sub: null,
       description:
          "Low-top but never low profile. Inspired by the original that debuted in '85, this AJ1 offers a clean, classic look that's familiar yet always fresh. Pairing full-grain leather overlays with satin underlays gives these Js an extra-smooth look and feel.",
       size: [

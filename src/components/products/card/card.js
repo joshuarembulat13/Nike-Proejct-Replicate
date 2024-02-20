@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./productCard.module.scss";
 
 export default function ProductCard({
@@ -9,19 +9,36 @@ export default function ProductCard({
    discount,
    image,
    price,
+   subImage,
 }) {
    const compute = discount / 100;
    const disc = price * compute;
    const total = price - disc;
+
+   const [subImages, setImage] = useState(image);
    return (
       <div className={styles.container}>
          <div className={styles.avatar}>
-            <img src={image} alt={name} className={styles.image} />
+            {subImages ? (
+               <img src={image} alt={name} className={styles.image} />
+            ) : (
+               subImage.map(({ img }) => (
+                  <img src={img} className={styles.image} alt='' />
+               ))
+            )}
          </div>
+         {subImage
+            ? subImage.map(({ img, id }) => (
+                 <button value={img} onClick={(e) => setImage(e.target.value)}>
+                    <img src={img} alt='' height={40} width={40} />
+                 </button>
+              ))
+            : null}
          <div className={styles.details}>
             <h2 className={styles.title}>{name}</h2>
             <h2 className={styles.category}>{category}</h2>
             <span className={styles.colour}>1 Colour</span>
+
             <div className={styles.pricing}>
                <div className={styles.mainPrice}>
                   <span className={styles.totalPrice}>
