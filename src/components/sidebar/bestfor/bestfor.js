@@ -9,7 +9,7 @@ export default function BestFor() {
       <div className={styles.container}>
          <div className={styles.mainContainer}>
             <button onClick={() => setDown(() => !down)}>
-               <span>Kids</span>
+               <span>Best For</span>
                {down ? <TbChevronDown size={23} /> : <TbChevronUp size={23} />}
             </button>
             {down
